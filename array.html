@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array-and-loops</title>
+</head>
+<body>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <p id="demo4"></p>
+  <p id="demo5"></p>
+  <p id="demo6"></p>
+  <p id="demo7"></p>
+  <p id="demo8"></p>
+  <p id="demo9"></p> 
+  <p id="demo10"></p> 
+  <p id="demo11"></p> 
+  <script>
+var colors = ["Blue", "Red", "Yellow", "Green", "Black"];
+
+document.getElementById("demo1").innerHTML = colors;
+
+document.getElementById("demo2").innerHTML = colors[0];
+
+document.getElementById("demo3").innerHTML = colors[2];
+colors[4] = "ultraviolet";
+var fourthcolor = ["Black"]
+colors.push("pink");
+    document.getElementById("demo4").innerHTML = colors;
+
+colors.unshift("Purple");
+document.getElementById("demo5").innerHTML = colors;
+
+document.getElementById("demo6").innerHTML = colors.length;
+
+colors.pop();
+document.getElementById("demo7").innerHTML = colors;
+
+document.getElementById("demo8").innerHTML = colors.length;
+
+var text = "";
+var i;
+for (i = 0; i < colors.length; i++) {
+  text += colors[i] + [i] + "<br>";
+}
+document.getElementById("demo9").innerHTML = text;
+
+
+var text = "";
+var i;
+for (i = 0; i < colors.length; i++) {
+  text += colors[i] + [i] + "<br>";
+}
+document.getElementById("demo10").innerHTML = text;
+
+var str = ["Blue", "Red", "Yellow", "Green", "Black"];
+var lastcolor = str.slice(35,40);
+document.getElementById("demo11").innerHTML = lastcolor; 
+
+
+</script>
+</body>
+</html>
